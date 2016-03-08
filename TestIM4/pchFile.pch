@@ -1,0 +1,27 @@
+//
+//  pchFiel.pch
+//  TestIM4
+//
+//  Created by Apple on 15/12/31.
+//  Copyright © 2015年 lanjue. All rights reserved.
+//
+
+#ifndef pchFile_pch
+#define pchFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* pchFile_pch */
+
+#import "Masonry.h"
+#import "MyUtil.h"
+#import "Const.h"
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+//上传图片接口
+#define UploadImageURL (@"http://114.215.240.173/api/index.php/Home/Talk/Imgupload")
+#define UploadAudioURL (@"http://114.215.240.173/api/index.php/Home/Talk/Voiceupload")
+#define FileURL (@"http://114.215.240.173/api/")
